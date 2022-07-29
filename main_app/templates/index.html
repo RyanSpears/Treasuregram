@@ -1,13 +1,20 @@
+{% load static %}
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
-    <head>
-        <title>Treasure Gram</title>
-    </head>
-    <body>
-       <h1>Treasure Gram</h1>
-       <p>{{ treasure_name }}</p>
-       <p>{{ treasure_value }}</p>
-    </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+    <title>Treasure Gram</title>
+</head>
+
+<body>
+    <h1>Treasure Gram</h1>
+    <p>{{ treasure_name }}</p>
+    <p>{{ treasure_value }}</p>
+</body>
+
 </html>
